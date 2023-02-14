@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: false }));
 //MongoDb configuration
-mongoose.connect(process.env.CloudDB,function(err) {
+mongoose.connect("mongodb+srv://newuser:Shaheryar10@blogapp.x2gmw.mongodb.net/?retryWrites=true&w=majority",function(err) {
 	if(err)
 	{
 		//if connection fails
